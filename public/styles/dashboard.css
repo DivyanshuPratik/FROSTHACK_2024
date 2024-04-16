@@ -1,0 +1,54 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("/images/90.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    width: 350px;
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 7.5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.doctorclass,
+.diagnosisclass,
+.logoutclass {
+    font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

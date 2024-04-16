@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="/styles/bookAppointment.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Book Appointment</h1>
+        <img src="/<%= doctor.fields.profile_photo %>" alt="<%= doctor.fields.profile_photo %>" class="doctor-img">
+        <h2 class="doctor-name"><%= doctor.fields.first_name %> <%= doctor.fields.last_name %></h2>
+        <p class="doctor-specialty"><strong>Specialty:</strong> <%= doctor.fields.speciality %></p>
+        <p class="doctor-qualification"><strong>Qualifications:</strong> <%= doctor.fields.qualification %></p>
+        <p class="doctor-hospital"><strong>Hospital:</strong> <%= doctor.fields.hospital %></p>
+        <form action="/doctors/<%= doctor.fields.doctor_id %>/book-appointment" method="post" class="appointment-form">
+            <label for="appointmentDate" class="form-label">Appointment Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required class="form-input">
+            <button type="submit" class="form-button">Book Appointment</button>
+        </form>
+    </div>
+
+</body>
+</html>

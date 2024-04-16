@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="stylesheet" href="/styles/doctor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>List of Doctors</h1>
+        <% doctors.forEach(doctor => { %>
+            <div class="doctor-card">
+                <img src="<%= doctor.fields.profile_photo %>" alt="Doctor photo">
+                <div class="doctor-details">
+                    <h3><%= doctor.fields.first_name %> <%= doctor.fields.last_name %></h3>
+                    <p><b>Speciality:</b> <%= doctor.fields.speciality %></p>
+                    <a href="/doctors/<%= doctor.fields.doctor_id %>/book-appointment" class="book-button">Book Appointment</a>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

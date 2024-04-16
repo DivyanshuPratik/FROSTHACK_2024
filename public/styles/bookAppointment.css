@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    transition: background-color 0.5s ease;
+}
+.container{
+    background-color: white;
+    width:40vw;
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+.page-title {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: text-shadow 0.5s ease;
+}
+
+.doctor-img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.doctor-img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.doctor-name {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.5s ease;
+}
+
+.doctor-specialty,
+.doctor-qualification,
+.doctor-hospital {
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+    transition: color 0.5s ease;
+}
+
+.doctor-specialty strong,
+.doctor-qualification strong,
+.doctor-hospital strong {
+    color: #333;
+    transition: color 0.5s ease;
+}
+
+.appointment-form {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease;
+}
+
+.appointment-form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    color: #333;
+    margin-bottom: 7px;
+    transition: color 0.5s ease;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color 0.5s ease;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+body:hover {
+    background-color: #f0f0f0;
+}
+
+.page-title:hover,
+.doctor-name:hover,
+.doctor-specialty:hover,
+.doctor-qualification:hover,
+.doctor-hospital:hover,
+.form-label:hover,
+.doctor-specialty strong:hover,
+.doctor-qualification strong:hover,
+.doctor-hospital strong:hover {
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,30 @@
+<!-- appointments.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="/styles/Appointment.css">
+</head>
+<body>
+    <h1>Appointments</h1>
+    <% if (appointments.length === 0) { %>
+        <p>No appointments available.</p>
+    <% } else { %>
+        <table>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Appointment Date</th>
+            </tr>
+            <% appointments.forEach(appointment => { %>
+                <tr>
+                    <td><%= appointment.doctorName %></td>
+                    <td><%= appointment.appointmentDate.toDateString() %></td>
+                </tr>
+            <% }); %>
+        </table>
+    <% } %>
+    <a href="/dashboard">Go to dashboard</a>
+</body>
+</html>
